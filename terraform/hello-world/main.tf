@@ -9,6 +9,6 @@ resource "aws_instance" "hello-world" {
     ami = "ami-052064a798f08f0d3"
 
     tags = {
-        Name = "terraform-primer-vistazo"
+        Name = "terraform-segundo-vistazo"
     }
 }
