@@ -1,0 +1,39 @@
+regions:
+  - us-east-1
+
+blocklist:
+  - "000000000000"
+
+no-account-alias: true
+no-blocklist-terms-default: true
+
+# Cuenta(s) que serán objetivo(s)
+accounts:
+  "380217670069": {} # REPLACEME_TARGET
+
+resource-types:
+  includes:
+    - EC2Subnet
+    - EC2SecurityGroup
+    - EC2NetworkInterface
+    - EC2PlacementGroup
+    - EC2VPC
+    - EC2InternetGateway
+    - EC2InternetGatewayAttachment
+    - EC2DefaultSecurityGroupRule
+    - EC2Address
+    - EC2Instance
+    - EC2KeyPair
+    - EC2NetworkACL
+    - EC2RouteTable
+    - S3Bucket
+    - EC2VPCEndpoint                     
+    - EC2VPCEndpointConnection           
+    - EC2VPCEndpointServiceConfiguration 
+    - EC2VPCPeeringConnection            
+    - EC2VPNConnection    
+    - EC2VPNGateway          
+    - EC2VPNGatewayAttachment
+
+bypass-alias-check-accounts:
+- "380217670069" # REPLACEME_ALIAS
